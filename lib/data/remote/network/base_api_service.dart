@@ -13,21 +13,21 @@ abstract class BaseApiService {
     Map<String, String> routeParam = const {},
     Map<String, String> queryParam = const {},
     Map<String, String> headers = const {},
-    String body = "",
+    var body = "",
   });
   Future<dynamic> putResponse({
     required String url,
     Map<String, String> routeParam = const {},
     Map<String, String> queryParam = const {},
     Map<String, String> headers = const {},
-    String body = "",
+    var body = "",
   });
   Future<dynamic> patchResponse({
     required String url,
     Map<String, String> routeParam = const {},
     Map<String, String> queryParam = const {},
     Map<String, String> headers = const {},
-    String body = "",
+    var body = "",
   });
   Future<dynamic> deleteResponse({
     required String url,

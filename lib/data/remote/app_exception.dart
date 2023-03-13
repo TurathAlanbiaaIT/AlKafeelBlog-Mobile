@@ -30,6 +30,10 @@ class NotFoundException extends AppException {
   NotFoundException([message]) : super(message, "Not Found: ");
 }
 
+class MethodNotAllowedException extends AppException {
+  MethodNotAllowedException([message]) : super(message, "request method not allowed: ");
+}
+
 class InvalidInputException extends AppException {
   InvalidInputException([String? message]) : super(message, "Invalid Input: ");
 }
